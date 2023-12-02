@@ -2,14 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="457707a2-9f91-47c2-b05a-7ce85ee6c0e6" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataflow.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/former.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llinear_run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LLinear.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LLinear.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/data_provider/data_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/data_provider/data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/exp/exp_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/exp/exp_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/AutoCorrelation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/Autoformer_EncDec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/Embed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/FourierCorrelation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/MultiWaveletCorrelation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/SelfAttention_Family.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/Transformer_EncDec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/layers/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/models/Autoformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/models/FEDformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/models/Informer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/models/Transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/scripts/LongForecasting.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/scripts/LookBackWindow.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/utils/masking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/utils/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/utils/timefeatures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FEDformer/utils/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LLinearModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/LEGAL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/long_range_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/preprocess_elect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/preprocess_flow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/preprocess_wind.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/Layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/Modules.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/PAM_TVM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/Pyraformer_LR.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/Pyraformer_SS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/SubLayers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/embed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/graph_attention.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/hierarchical_mm_tvm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/pyraformer/lib/lib_hierarchical_mm_float32_cuda.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/scripts/LongForecasting.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/scripts/LookBackWindow.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/simulate_sin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/single_step_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/utils/timefeatures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pyraformer/utils/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoints/DLinear_rate 0.0001/checkpoint.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ETTh1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_provider/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_provider/data_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_provider/data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exp/exp_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exp/exp_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exp/exp_stat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers/AutoCorrelation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers/Autoformer_EncDec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers/Embed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers/SelfAttention_Family.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layers/Transformer_EncDec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Autoformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/DLinear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Informer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Linear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/NLinear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Stat_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/DLinear/DLinear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/DLinear/DLinear_Univariate_Results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/DLinear/DLinear_results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/DLinear/LookBackWindow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/DLinear/results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/Linear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/Mul-results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/Uni-results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/Visualization_DLinear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/efficiency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/DLinear_rate 0.0001/metrics.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/DLinear_rate 0.0001/pred.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/DLinear_rate 0.0001/real_prediction.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/DLinear_rate 0.0001/true.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_longExp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_stat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-Embedding/Formers_Embedding.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Formers_Long.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/electricity.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/etth1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/etth2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/ettm1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/ettm2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/exchange_rate.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/ili.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/traffic.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/univariate/etth1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/univariate/etth2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/univariate/ettm1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/univariate/ettm2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Linear/weather.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LongForecasting/Stat_Long.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LookBackWindow/Formers_LookBackWindow.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/EXP-LookBackWindow/Linear_DiffWindow.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/DLinear_rate 0.0001/0.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/DLinear_rate 0.0001/20.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/DLinear_rate 0.0001/40.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/DLinear_rate 0.0001/60.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/DLinear_rate 0.0001/80.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/masking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/timefeatures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weight_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights_plot/seasonal.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights_plot/trend.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llinear_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +152,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/run_longExp.py" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.llinear_run">
+  <component name="RunManager" selected="Python.run_longExp">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="LLinear" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="llinear_run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LLinear" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +191,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llinear_run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +213,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="SCRIPT_NAME" value="K:\LLinear\run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_longExp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LLinear" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_longExp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_longExp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LLinear" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_longExp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,11 +291,12 @@
     <list>
       <item itemvalue="Python.show" />
       <item itemvalue="Python.run" />
-      <item itemvalue="Python.llinear_run" />
+      <item itemvalue="Python.run_longExp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.llinear_run" />
+        <item itemvalue="Python.run_longExp" />
+        <item itemvalue="Python.run_longExp" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.show" />
       </list>
@@ -157,7 +314,7 @@
       <updated>1701351594880</updated>
       <workItem from="1701351596083" duration="1677000" />
       <workItem from="1701495537184" duration="584000" />
-      <workItem from="1701496139877" duration="9395000" />
+      <workItem from="1701496139877" duration="12491000" />
     </task>
     <servers />
   </component>
@@ -168,30 +325,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1701503600505">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1701511543524">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1701503600505" />
-    <state x="548" y="170" key="FileChooserDialogImpl" timestamp="1701503597620">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1701511543524" />
+    <state x="548" y="170" key="FileChooserDialogImpl" timestamp="1701511535799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1701503597620" />
-    <state width="1491" height="210" key="GridCell.Tab.0.bottom" timestamp="1701508503486">
+    <state x="548" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1701511535799" />
+    <state width="723" height="210" key="GridCell.Tab.0.bottom" timestamp="1701511603321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1701508503486" />
-    <state width="1491" height="210" key="GridCell.Tab.0.center" timestamp="1701508503486">
+    <state width="723" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1701511603321" />
+    <state width="723" height="210" key="GridCell.Tab.0.center" timestamp="1701511603321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1701508503486" />
-    <state width="1491" height="210" key="GridCell.Tab.0.left" timestamp="1701508503485">
+    <state width="723" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1701511603321" />
+    <state width="723" height="210" key="GridCell.Tab.0.left" timestamp="1701511603321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1701508503485" />
-    <state width="1491" height="210" key="GridCell.Tab.0.right" timestamp="1701508503486">
+    <state width="723" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1701511603321" />
+    <state width="723" height="210" key="GridCell.Tab.0.right" timestamp="1701511603321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1701508503486" />
+    <state width="723" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1701511603321" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1701506866497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -208,10 +365,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1701506866497" />
-    <state x="272" y="57" key="SettingsEditor" timestamp="1701496811123">
+    <state x="272" y="57" key="SettingsEditor" timestamp="1701510851633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1701496811123" />
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1701510851633" />
     <state x="479" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1701496140216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,7 +376,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LLinear$run.coverage" NAME="run Coverage Results" MODIFIED="1701503352319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LLinear$run_longExp.coverage" NAME="run_longExp Coverage Results" MODIFIED="1701511603313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LLinear$show.coverage" NAME="show Coverage Results" MODIFIED="1701496814064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LLinear$llinear_run.coverage" NAME="llinear_run Coverage Results" MODIFIED="1701508503470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LLinear$llinear_run.coverage" NAME="run Coverage Results" MODIFIED="1701509606624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
