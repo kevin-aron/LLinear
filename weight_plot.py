@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 
 model_name = ''
-for root, dirs, files in os.walk("checkpoints"):
+for root, dirs, files in os.walk("weights_plot/checkpoints"):
     for name in files:
         model_path = os.path.join(root, name)
         if model_name not in model_path:

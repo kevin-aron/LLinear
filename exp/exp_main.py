@@ -38,6 +38,7 @@ class Exp_Main(Exp_Basic):
 
     def _get_data(self, flag):
         data_set, data_loader = data_provider(self.args, flag)
+        # print(len(data_loader))
         return data_set, data_loader
 
     def _select_optimizer(self):
@@ -219,11 +220,9 @@ class Exp_Main(Exp_Basic):
 
     def test(self, setting, test=0):
         test_data, test_loader = self._get_data(flag='test')
-        
         if test:
             print('loading model')
             self.model.load_state_dict(torch.load(os.path.join('./checkpoints/' + setting, 'checkpoint.pth')))
-
         preds = []
         trues = []
         inputx = []
@@ -288,6 +287,8 @@ class Exp_Main(Exp_Basic):
         trues = np.array(trues)
         inputx = np.array(inputx)
 
+        print(preds.shape, trues.shape, inputx.shape)
+
         preds = preds.reshape(-1, preds.shape[-2], preds.shape[-1])
         trues = trues.reshape(-1, trues.shape[-2], trues.shape[-1])
         inputx = inputx.reshape(-1, inputx.shape[-2], inputx.shape[-1])
@@ -297,8 +298,8 @@ class Exp_Main(Exp_Basic):
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
 
-        mae, mse, rmse, mape, mspe, rse, corr = metric(preds, trues)
-        print('mse:{}, mae:{}'.format(mse, mae))
+        mae, mse, rmse, mape, mspe, rse, corr, nse = metric(preds, trues)
+        print('mse:{}, mae:{}, nse:{}'.format(mse, mae, nse))
         f = open("result.txt", 'a')
         f.write(setting + "  \n")
         f.write('mse:{}, mae:{}, rse:{}, corr:{}'.format(mse, mae, rse, corr))
@@ -306,7 +307,7 @@ class Exp_Main(Exp_Basic):
         f.write('\n')
         f.close()
 
-        np.save(folder_path + 'metrics.npy', np.array([mae, mse, rmse, mape, mspe,rse, corr]))
+        np.save(folder_path + 'metrics.npy', np.array([mae, mse, rmse, mape, mspe, rse, corr, nse]))
         # np.savetxt(folder_path + 'information.txt', np.array([mse, mae, rmse, mape, mspe, rse]), fmt="%.18e", delimiter=",")
         np.save(folder_path + 'pred.npy', preds)
         np.save(folder_path + 'true.npy', trues)

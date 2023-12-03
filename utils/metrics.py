@@ -31,6 +31,12 @@ def MAPE(pred, true):
 def MSPE(pred, true):
     return np.mean(np.square((pred - true) / true))
 
+def NSE(pred, true):
+    mean_true = np.mean(true)
+    numerator = np.sum((true - pred) ** 2)
+    denominator = np.sum((true - mean_true) ** 2)
+    nse = 1 - (numerator / denominator)
+    return nse
 
 def metric(pred, true):
     mae = MAE(pred, true)
@@ -40,5 +46,6 @@ def metric(pred, true):
     mspe = MSPE(pred, true)
     rse = RSE(pred, true)
     corr = CORR(pred, true)
+    nse = NSE(pred, true)
 
-    return mae, mse, rmse, mape, mspe, rse, corr
+    return mae, mse, rmse, mape, mspe, rse, corr, nse
